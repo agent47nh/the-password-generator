@@ -28,4 +28,5 @@ from thepasswordgenerator import PasswordGenerator
 generator = PasswordGenerator(length=16, upper=2, 
                               lower=2, special=2, numbers=2)
 print(generator.generate_password())
+print(generator.generate_multiple_passwords(15))
 ```

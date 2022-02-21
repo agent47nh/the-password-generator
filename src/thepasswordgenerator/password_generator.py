@@ -1,3 +1,6 @@
+#!/bin/sh/python
+# coding= utf-8
+
 from ast import Num
 import string
 import random
@@ -92,8 +95,22 @@ class PasswordGenerator:
         # Add remaining characters to password.
         remain_length = self._length - complexity_length
         password += "".join(compile_character_list)[:remain_length]
-        
+
         # Shuffle password.
         password = list(password)
         random.shuffle(password)
         return "".join(password)
+
+    def generate_multiple_passwords(self, number_of_passwords=10):
+        """_summary_: Generate multiple passwords.
+
+        Args:
+            number_of_passwords (int, optional): _description_. Defaults to 10.
+        """
+
+        passwords = []
+
+        for i in range(number_of_passwords):
+            passwords.append(self.generate_password())
+
+        return passwords
