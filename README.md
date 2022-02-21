@@ -1,6 +1,6 @@
 # Password Generator
 
-[![CodeQL](https://github.com/agent47nh/the-password-generator/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/agent47nh/the-password-generator/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/agent47nh/the-password-generator/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/agent47nh/the-password-generator/actions/workflows/codeql-analysis.yml) [![Test 🧪 thepasswordgenerator](https://github.com/agent47nh/the-password-generator/actions/workflows/build-test.yml/badge.svg)](https://github.com/agent47nh/the-password-generator/actions/workflows/build-test.yml)
 
 Generate passwords more easily with complexities!
 
