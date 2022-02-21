@@ -10,6 +10,7 @@ jobs:
   Run-Tests:
     name: Build and push thepasswordgenerator module
     runs-on: ubuntu-20.04
+    environment: PyPI Environment
     steps:
       - name: Checkout the main branch
         uses: actions/checkout@v2
@@ -37,7 +38,7 @@ jobs:
         uses: pypa/gh-action-pypi-publish@v1.5.0
         with:
           user: __token__
-          password: '${{ secrets.TEST_PYPI_API_TOKEN }}'
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
           repository_url: https://test.pypi.org/legacy/
 
       - name: Publish distribution 📦 to PyPI
@@ -45,4 +46,4 @@ jobs:
         uses: pypa/gh-action-pypi-publish@v1.5.0
         with:
           user: __token__
-          password: '${{ secrets.PYPI_API_TOKEN }}'
+          password: ${{ secrets.PYPI_API_TOKEN }}
