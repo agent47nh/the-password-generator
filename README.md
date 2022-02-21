@@ -1,5 +1,7 @@
 # Password Generator
 
+[![CodeQL](https://github.com/agent47nh/the-password-generator/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/agent47nh/the-password-generator/actions/workflows/codeql-analysis.yml)
+
 Generate passwords more easily with complexities!
 
 ## Installation
