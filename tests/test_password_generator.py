@@ -79,4 +79,4 @@ def special_check(password_generator):
 @pytest.fixture
 def password_generator():
     """Fixture to create a password generator object."""
-    return PasswordGenerator(length=20)
+    return PasswordGenerator(length=20, log_file='./test-thepasswordgenerator.log')

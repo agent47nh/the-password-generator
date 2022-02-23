@@ -1,5 +1,5 @@
 ---
-name: "Publish 📦 to PyPI"
+name: "Publish 📦 to Test PyPI"
 on:
   workflow_run:
     workflows:
@@ -8,10 +8,9 @@ on:
       - completed
 jobs:
   Run-Tests:
-    name: Publish to Production PyPI
+    name: Publish to Test PyPI
     runs-on: ubuntu-20.04
     environment: PyPI Environment
-    if: startsWith(github.ref, 'refs/tags')
     steps:
       - name: Checkout the main branch
         uses: actions/checkout@v2
@@ -35,8 +34,9 @@ jobs:
           --wheel
           --outdir dist/
 
-      - name: Publish distribution 📦 to PyPI
+      - name: Publish distribution 📦 to Test PyPI
         uses: pypa/gh-action-pypi-publish@v1.5.0
         with:
           user: __token__
-          password: ${{ secrets.PYPI_API_TOKEN }}
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository_url: https://test.pypi.org/legacy/

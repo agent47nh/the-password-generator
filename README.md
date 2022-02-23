@@ -1,6 +1,8 @@
-# Password Generator
+# The Password Generator
 
-[![CodeQL](https://github.com/agent47nh/the-password-generator/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/agent47nh/the-password-generator/actions/workflows/codeql-analysis.yml) [![Test 🧪 thepasswordgenerator](https://github.com/agent47nh/the-password-generator/actions/workflows/build-test.yml/badge.svg)](https://github.com/agent47nh/the-password-generator/actions/workflows/build-test.yml)
+[![CodeQL](https://github.com/agent47nh/the-password-generator/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/agent47nh/the-password-generator/actions/workflows/codeql-analysis.yml) [![PyTest 🐍](https://github.com/agent47nh/the-password-generator/actions/workflows/build-test.yml/badge.svg)](https://github.com/agent47nh/the-password-generator/actions/workflows/build-test.yml) [![Publish 📦 to PyPI](https://github.com/agent47nh/the-password-generator/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/agent47nh/the-password-generator/actions/workflows/build-test.yml) [![Publish 📦 to Test PyPI](https://github.com/agent47nh/the-password-generator/actions/workflows/publish-to-test-pypi.yml/badge.svg)](https://github.com/agent47nh/the-password-generator/actions/workflows/build-test.yml)
+
+
 
 Generate passwords more easily with complexities!
 
