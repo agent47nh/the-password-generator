@@ -1,11 +1,10 @@
 ---
 name: "Publish 📦 to PyPI"
 on:
-  workflow_run:
-    workflows:
-      - "Publish 📦 to Test PyPI"
-    types:
-      - completed
+  push:
+    tags:
+      - '*'
+
 jobs:
   Run-Tests:
     name: Publish to Production PyPI
