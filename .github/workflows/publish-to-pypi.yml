@@ -3,7 +3,7 @@ name: "Publish 📦 to PyPI"
 on:
   workflow_run:
     workflows:
-      - "Test 🧪 thepasswordgenerator"
+      - "PyTest 🐍"
     types:
       - completed
 jobs:
